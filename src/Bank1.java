@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Bank {
+public class Bank1 {
     public static void operation(double moneyVar){
 //        System.out.println("Ведіть суиу для погашення заборгованісті: ");
         double creditVar = 700;
@@ -21,8 +21,9 @@ public class Bank {
         }
     }
     public static void main(String[] args) {
-//        Scanner in = new Scanner(System.in);
-        operation(400);
+           Scanner in = new Scanner(System.in);
+            double money = in.nextDouble();
+            operation(money);
 
         // знаю що помилка тут , але я незнаю як в метод  operation() вставить саме ввведене число через Сканер.
                         // і основне згідно умови я маю зробити цикл з 7 операцій і зробити оплату боргу  за 7 раз або менше
