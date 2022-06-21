@@ -16,7 +16,6 @@ public class Delivery {
         }
         while (i <= N);
             return factor;
-
     }
 
     public static int factorialRecurtion(int n) {
