@@ -10,10 +10,11 @@ public class Bank {
         }
         if (money == creditVar) {
             System.out.println("Кредит сплачено");
+            System.out.println("Переплата відсутня");
         }
         if (money < creditVar) {
             double borgVar = creditVar - money;
-            System.out.println("Сума заборгованості складає: " + borgVar + " грн.");
+            System.out.println("Сума заборгованості складає: " + borgVar + " грн.");   // for ???!!!
             }
         }
     public static void main(String[] args) {
