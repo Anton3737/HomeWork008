@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Bank {
     public static void operation(double moneyVar){
-        System.out.println("Ведіть суиу для погашення заборгованісті: ");
+//        System.out.println("Ведіть суиу для погашення заборгованісті: ");
         double creditVar = 700;
         double borgVar = 0;
         double overpayVar = 0;
-        double money = in.nextInt();
+        double money = moneyVar;
         if (money > creditVar) {
             overpayVar = moneyVar - creditVar;
             System.out.println("Кредит сплачено");
@@ -21,8 +21,10 @@ public class Bank {
         }
     }
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        operation(in.nextInt()); // знаю що помилка тут , але я незнаю як в метод  operation() вставить саме ввведене число через Сканер.
+//        Scanner in = new Scanner(System.in);
+        operation(400);
+
+        // знаю що помилка тут , але я незнаю як в метод  operation() вставить саме ввведене число через Сканер.
                         // і основне згідно умови я маю зробити цикл з 7 операцій і зробити оплату боргу  за 7 раз або менше
     }
 }
